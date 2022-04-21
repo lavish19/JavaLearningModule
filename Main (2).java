@@ -1,28 +1,27 @@
-/******************************************************************************
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
+// Java program to remove elements
+// from a Queue
 
-*******************************************************************************/
-//java program to demostrate working of arraylist
 import java.util.*;
-public class Main
-{
-	public static void main(String[] args) {
-		System.out.println("Hello World");
-		Scanner s=new Scanner(System.in);
-		ArrayList<Integer>l=new ArrayList<Integer>();
-		for(int i=0;i<=5;i++){
-		    l.add(i);
-		    System.out.println(l);
-		}
-		l.remove(4);
-		for(int i=0;i<=l.size();i++){
-		    System.out.println(l.get(i)+" ");
-		    
-		}
-		
-	}
+
+public class Main{
+
+    public static void main(String args[])
+    {
+        Queue<String> pq = new PriorityQueue<>();
+
+        pq.add("Geeks");
+        pq.add("For");
+        pq.add("Geeks");
+
+        System.out.println("Initial Queue " + pq);
+
+        pq.remove("Geeks");
+
+        System.out.println("After Remove " + pq);
+
+        System.out.println("Poll Method " + pq.poll());
+
+        System.out.println("Final Queue " + pq);
+    }
 }

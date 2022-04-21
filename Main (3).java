@@ -1,21 +1,23 @@
-import java.util.ArrayList;
 
-class Main {
-  public static void main(String[] args) {
+// Java program to iterate elements
+// to a Queue
 
-    // creating an array list
-    ArrayList<String> animals = new ArrayList<>();
-    animals.add("Cow");
-    animals.add("Cat");
-    animals.add("Dog");
-    System.out.println("ArrayList: " + animals);
+import java.util.*;
 
-    // iterate using for-each loop
-    System.out.println("Accessing individual elements:  ");
+public class Main {
 
-    for (String language : animals) {
-      System.out.print(language);
-      System.out.print(", ");
+    public static void main(String args[])
+    {
+        Queue<String> pq = new PriorityQueue<>();
+
+        pq.add("all");
+        pq.add("For");
+        pq.add("all");
+
+        Iterator iterator = pq.iterator();
+
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
     }
-  }
 }

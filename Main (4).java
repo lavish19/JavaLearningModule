@@ -1,18 +1,33 @@
-import java.util.ArrayList;
+
+// Java program to demonstrate the
+// creation of queue object using the
+// PriorityQueue class
+
+import java.util.*;
 
 class Main {
-  public static void main(String[] args) {
-    ArrayList<String> animals = new ArrayList<>();
 
-    // add elements in the array list
-    animals.add("Dog");
-    animals.add("Cat");
-    animals.add("Horse");
-    System.out.println("ArrayList: " + animals);
+    public static void main(String args[])
+    {
+        // Creating empty priority queue
+        Queue<Integer> pQueue
+            = new PriorityQueue<Integer>();
 
-    // remove element from index 2
-    String str = animals.remove(2);
-    System.out.println("Updated ArrayList: " + animals);
-    System.out.println("Removed Element: " + str);
-  }
+        // Adding items to the pQueue
+        // using add()
+        pQueue.add(10);
+        pQueue.add(20);
+        pQueue.add(15);
+
+        // Printing the top element of
+        // the PriorityQueue
+        System.out.println(pQueue.peek());
+
+        // Printing the top element and removing it
+        // from the PriorityQueue container
+        System.out.println(pQueue.poll());
+
+        // Printing the top element again
+        System.out.println(pQueue.peek());
+    }
 }
