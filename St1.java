@@ -9,6 +9,12 @@ public class St1 {
 		s.push(02);
 		System.out.println("is stack is empty "+s.empty());
 		System.out.println("elements of stack is "+ s);
+		s.pop();//deletes last elements from the stack
+		System.out.println(s);
+		s.remove(1);
+		System.out.println(s);
+		
+		
 		
 	}
 
