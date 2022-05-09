@@ -4,14 +4,23 @@ public class Jdbc_Project {
 		String url="jdbc:mysql://localhost:3306/new_lavishdb";
 		String uname="root";
 		String pass="Ramkrishn@009";
-		String query="select EmpName from employee where EmpId=4";
-		Class.forName("com.mysql.jdbc.Driver");
+		String query="select * from employee";
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con=DriverManager.getConnection(url,uname,pass);
 		Statement st=con.createStatement();
 		ResultSet rs=st.executeQuery(query);
+		String userData="";
+		while(rs.next()) {
+			userData=rs.getInt(1)+" : "+rs.getString(2);
+			System.out.println(userData);
+		}
 		rs.next();
-		String name=rs.getString("EmpName");
-		System.out.println(name);
+		userData=rs.getInt(1)+" : "+rs.getString(2);
+		rs.next();
+	    userData=rs.getInt(1)+" : "+rs.getString(2);
+	    rs.next();
+	    userData=rs.getInt(1)+" : "+rs.getString(2);
+		System.out.println(userData);
 		st.close();
 		con.close();
 		
