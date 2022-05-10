@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class FreqOString {
 	public static void main(String[] args) {
 		String str;
+		System.out.println("Enter the string or sentence ");
 		Scanner s=new Scanner(System.in);
 		str=s.nextLine();
 		int count=0,len=0;
