@@ -1,3 +1,4 @@
+
 public class HalfPyramid
 { 
     public static void rightTriangle(int n) 
