@@ -14,14 +14,14 @@ public class Array2 {
 		for(int i=0;i<=n;i++) {
 			System.out.println(array[i]);
 		}
-		System.out.println("Aeverage of the array elements are");
+		System.out.println("Average of the array elements are");
 		for(int i=0;i<=n;i++) {
 			sum+=array[i];
-			average+=sum/n+1;
 		}
+		System.out.println("the summ of all elements of the array "+sum);
 		System.out.println("therefore the average of the array elements are ");
-		System.out.println(sum);
-		System.out.println(average);
+
+		System.out.println(sum/n);
 	}
 
 }
