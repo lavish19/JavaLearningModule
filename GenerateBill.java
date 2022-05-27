@@ -49,7 +49,7 @@ public class GenerateBill {
 		System.out.println("enter the number of units for which bill be generated");
 		int units=Integer.parseInt(br.readLine());
 		Plan p=planFactory.getPlan(planName);
-		System.out.println("bill amount for the	"+planName+"of"+units+"units is: ");
+		System.out.println("bill amount for the	"+planName+" of "+units+" units is: ");
 		p.getRate();
 		p.calculateBill(units);
 	}
